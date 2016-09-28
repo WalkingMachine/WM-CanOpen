@@ -251,7 +251,8 @@ int main (int argc, char *argv[]) {
         /* Wait rt_thread. */
         if(!firstRun) {
             CO_LOCK_OD();
-            CO->CANmodule[0]->CANnormal = false;
+            /* disable CAN and CAN interrupts */
+            /*not sure if its ok to remove*/ //CO->CANmodule[0]->CANnormal = false;
             CO_UNLOCK_OD();
         }
 
@@ -285,7 +286,6 @@ int main (int argc, char *argv[]) {
         CO_SDO_initCallback(CO->SDO[0], taskMain_cbSignal);
         CO_SDOclient_initCallback(CO->SDOclient, taskMain_cbSignal);
 
-        CO_SYNC_initCallback(CO->SYNC, CANrx_lockCbSync);
 
 
         /* Initialize time */

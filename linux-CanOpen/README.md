@@ -100,8 +100,9 @@ It will show all CAN traffic on vcan0.
 
 Start second terminal, compile and start *canopend*.
 
-    $ cd CANopenSocket/canopend
+    $ cd linux-CanOpen/canopend
     $ make
+    $ cd app
     $ ./canopend --help
     $ ./canopend vcan0 -i 4 -s od4_storage -a od4_storage_auto
 
@@ -152,7 +153,7 @@ socket for command interface.
 
 Start third terminal, compile and start canopencomm.
 
-    $ cd CANopenSocket/canopencomm
+    $ cd linux-CanOpen/canopencomm
     $ make
     $ ./canopencomm --help
 
