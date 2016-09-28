@@ -64,20 +64,20 @@ We will run two instances of *CANopend*. First will be basic node with ID=4,
 second, with nodeID = 3, will have master functionality.
 
 
-### Get the project
+### ~~Get the project~~
 
-Clone the project from git repository and get submodules:
+~~Clone the project from git repository and get submodules:~~
 
-    $ git clone https://github.com/CANopenNode/CANopenSocket.git
-    $ cd CANopenSocket
-    $ git submodule init
-    $ git submodule update
+~~$ git clone https://github.com/CANopenNode/CANopenSocket.git
+$ cd CANopenSocket
+$ git submodule init
+$ git submodule update~~
 
-(If you want to work on submodule CANopenNode, you can `cd CANopenNode`,
+~~(If you want to work on submodule CANopenNode, you can `cd CANopenNode`,
 and apply git commands directly on it. Initially is in head detached state,
 so you have to `git checkout master` first. Then you can control submodule
 separately, for example `git remote add {yourName} {url-of-your-git-repository}`,
-and `git pull {yourName} {yourbranch}`)
+and `git pull {yourName} {yourbranch}`)~~
 
 
 ### First terminal: CAN dump
